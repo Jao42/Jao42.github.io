@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Portifólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Aqui e a tropa do catioro loko HAHAHAHAHAHAHAH</h1>
+  <main>
+    <h1>Jao42</h1>
+    <p class="sobre-mim">
+      Opa! Eae?<br>
+      Me chamo João, curso Informática no IFPB e atualmente busco me inserir no mercado de desenvolvimento de software.
+      Minha linguagem de programação principal atualmente é python, mas tenho alguma experiência com Java e Javascript(Coisas básicas do curso).
+    </p>
+    <div class ="experiencias">
+      <h2>Experiências</h2>
+      <span>Oia aí as coisinha que eu fiz</span>
+      <div class="experiencia">
+        <h3>Monitoria</h3>
+        <p>
+          Já fui monitor da matéria "Algoritmos e Lógica de Programação", onde basicamente eu ajudava colegas que estavam pagando a matéria e estavam com dificuldade, seja em exercícios ou teoria. A matéria é basicamente lógica em python. Aprendi bastante a organizar minhas ideias e me expressar melhor(embora ainda ache que não seja lá muito bom nisso, algumas pessoas alegaram ter entendido alguma coisa do que eu me propus a explicar). Foi massa!
+        </p>
+      </div>
+      <div class="experiencia">
+        <h3>Suap Scraper</h3>
+        <p>Esse projeto é uma biblioteca para raspar o sistema que é usado no IFPB para... coisas - é muita coisa - nele é que, por exemplo, os professores registram as notas dos alunos(e a gente corre para acessar e ver se passou), e aí é onde essa biblioteca atua atualmente, por enquanto ela só pega as informações do boletim e retorna como um JSON. Fiz esse projeto primeiramente porque o SUAP do IFPB não tem uma API disponível(do IFRN tem, triste) e eu queria uma forma de receber notificações quando tivesse uma nota nova no sistema(consegui!) e futuramente talvez fazer outras automações. Aprendi coisas como requisições assíncronas com httpx e asyncio(cada bimestre é um link, se houver muitas notas no boletim pode demorar horrores de forma síncrona... 30 seg até); a trabalhar com sessões, pois é preciso se autenticar para conseguir as informações, e sem sessões não dá para persistir os cookies de autenticação entre as requisições; além de que aprendi a como enviar uma biblioteca ao pypi para poder ser instalado com o pip! Maneirão! Tem muita coisa ainda para fazer nesse projeto(documentar melhor, fazer testes, raspar mais coisas...) mas já funciona.</p>
+      </div>
+      <!--
+      <div class="experiencia">
+        <h3>Gerenciador de Dívidas</h3>
+        <p></p>
+      </div>
+      -->
+    </div>
+  <main>
 </body>
 </html>
