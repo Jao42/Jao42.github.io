@@ -67,4 +67,8 @@ h1, h2, h3 {
 .experiencias span {
   font-weight: 300;
   font-size: 17px;
+  background-color: rgba(252, 186, 3, 0.6);
+  padding: 0 20px;
+  border-radius: 10px;
 }
+
