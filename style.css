@@ -64,7 +64,7 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   img {
     display: none;
   }
@@ -88,13 +88,6 @@ h1, h2, h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  img {
-    width: 30px;
-    height: 30px;
-  }
-
-}
 
 
 
