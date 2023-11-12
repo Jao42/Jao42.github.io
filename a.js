@@ -46,4 +46,4 @@ async function poc() {
   return status
 
 }
-poc().then(console.log)
+poc().then(status => (status === 200 ? document.write('Veja seu email :v'): ''))
