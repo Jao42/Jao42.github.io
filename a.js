@@ -46,4 +46,7 @@ async function poc() {
   return status
 
 }
-poc().then(() => document.write('Veja seu email :v'))
+
+arrastavel = document.querySelector('[draggable="true"]')
+arrastavel.textContent = 'Deu certo! Agora espera um pouquinho...'
+poc().then(() => document.write('Beleza! Você acabou de perder sua conta :D'))
