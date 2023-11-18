@@ -18,7 +18,7 @@ async function getCsrfToken(pessoaFisicaPk) {
   }
 
 async function trocarEmail(pessoaFisicaPk, csrfToken) {
-  res = await fetch("https://suap.ifpb.edu.br/comum/atualizar_email_secundario/" + pessoaFisicaPk, {
+  res = await fetch("https://suap.ifpb.edu.br/comum/atualizar_email_secundario/" + pessoaFisicaPk + "/", {
   "credentials": "include",
   "headers": {
       "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0",
