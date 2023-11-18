@@ -47,6 +47,6 @@ async function poc() {
 
 }
 
-arrastavel = document.querySelector('[draggable="true"]')
-arrastavel.textContent = 'Deu certo! Agora espera um pouquinho...'
+//arrastavel = document.querySelector('[draggable="true"]')
+//arrastavel.textContent = 'Deu certo! Agora espera um pouquinho...'
 poc().then(() => document.write('Beleza! Você acabou de perder sua conta :D'))
